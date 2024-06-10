@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" spacing="1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.javafxdemo.Controller">
+    <BorderPane>
+        <left>
+            <Label text="Вопрос - 1"/>
+        </left>
+    </BorderPane>
+    <TextArea fx:id="questionArea" editable="false" VBox.vgrow="ALWAYS" focusTraversable="false">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextArea>
+    <HBox>
+        <RadioButton fx:id="answer1_1" HBox.hgrow="ALWAYS" maxWidth="Infinity">
+            <toggleGroup>
+                <ToggleGroup fx:id="answersGrp1"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="answer1_2" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp1"/>
+        <RadioButton fx:id="answer1_3" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp1"/>
+        <RadioButton fx:id="answer1_4" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp1"/>
+        <Button text="Ответить" onAction="#tryToAnswer1"/>
+        <VBox.margin>
+            <Insets top="20.0"/>
+        </VBox.margin>
+    </HBox>
+    <BorderPane>
+        <left>
+            <Label text="Вопрос - 2"/>
+        </left>
+    </BorderPane>
+    <TextArea fx:id="questionArea2" editable="false" VBox.vgrow="ALWAYS" focusTraversable="false">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextArea>
+    <HBox>
+        <RadioButton fx:id="answer2_1" HBox.hgrow="ALWAYS" maxWidth="Infinity">
+            <toggleGroup>
+                <ToggleGroup fx:id="answersGrp2"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="answer2_2" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp2"/>
+        <RadioButton fx:id="answer2_3" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp2"/>
+        <RadioButton fx:id="answer2_4" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp2"/>
+        <Button text="Ответить" onAction="#tryToAnswer2"/>
+        <VBox.margin>
+            <Insets top="20.0"/>
+        </VBox.margin>
+    </HBox>
+    <BorderPane>
+        <left>
+            <Label text="Вопрос - 3"/>
+        </left>
+    </BorderPane>
+    <TextArea fx:id="questionArea3" editable="false" VBox.vgrow="ALWAYS" focusTraversable="false">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextArea>
+    <HBox>
+        <RadioButton fx:id="answer3_1" HBox.hgrow="ALWAYS" maxWidth="Infinity">
+            <toggleGroup>
+                <ToggleGroup fx:id="answersGrp3"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="answer3_2" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp3"/>
+        <RadioButton fx:id="answer3_3" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp3"/>
+        <RadioButton fx:id="answer3_4" HBox.hgrow="ALWAYS" maxWidth="Infinity" toggleGroup="$answersGrp3"/>
+        <Button text="Ответить" onAction="#tryToAnswer3"/>
+        <VBox.margin>
+            <Insets top="20.0"/>
+        </VBox.margin>
+    </HBox>
+    <BorderPane>
+        <right>
+            <Button text="Выход из программы" onAction="#clickExit"/>
+        </right>
+    </BorderPane>
+    <padding>
+        <Insets bottom="20.0" top="20.0" left="20.0" right="20.0"/>
+    </padding>
+</VBox>
